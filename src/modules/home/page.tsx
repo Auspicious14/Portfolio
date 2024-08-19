@@ -15,18 +15,20 @@ export const HomePage = () => {
     <div className="bg-primary min-h-screen">
       <NavBar />
       <main className="container mx-auto p-8">
-        <section className="flex justify-evenly items-center gap-20 py-12">
-          <div>
-            <h1 className="!text-5xl font-bold">Hi, I'm Auspicious</h1>
-            <p className="mt-4 text-base">
+        <section className="lg:flex justify-evenly items-center gap-20 py-12">
+          <div className="flex flex-col items-center justify-center lg:block">
+            <h1 className="text-6xl font-bold text-center lg:text-left">
+              Hi, I'm Auspicious
+            </h1>
+            <p className="mt-4 text-5xl text-center lg:text-base text-primary">
               A software developer specializing in creating engaging and
               visually stunning web applications.
             </p>
-            <Link href={"/contact"} className="border border-primary !my-8">
+            <Link href={"/contact"} className="text-center !my-8">
               <p className="p-4">Contact Me</p>
             </Link>
           </div>
-          <div>
+          <div className="flex justify-center lg:block">
             <Image
               src={HeroImage}
               alt="Image"
@@ -42,9 +44,9 @@ export const HomePage = () => {
               " Grind till you become ELENIYAN."
             </div>
           </div>
-          <div className="border border-secondary p-4 flex justify-end">
+          {/* <div className="border border-secondary p-4 flex justify-end">
             <p className="italic"> - Auspicious</p>
-          </div>
+          </div> */}
         </section>
         <section className="py-12">
           <div className="flex justify-between items-center my-4">
@@ -54,8 +56,8 @@ export const HomePage = () => {
             </div>
             <Link href={"/projects"}>View All</Link>
           </div>
-          <div className="flex justify-center gap-8">
-            <div className="w-full border-2 rounded-lg border-dashed border-secondary">
+          <div className="md:flex justify-center gap-8 ">
+            <div className="w-full border-2 rounded-lg border-dashed my-4 md:my-0 border-secondary">
               <Image
                 src={VendifyLogo}
                 alt="vendify"
@@ -63,7 +65,9 @@ export const HomePage = () => {
                 height={500}
                 className="bg-primary w-full rounded-t-lg object-cover"
               />
-              <div className="divide-y p-4">Typescript, Next.js, Node.js</div>
+              <div className="border border-b p-4">
+                Typescript, Next.js, Node.js
+              </div>
               <div className="p-4">
                 <h1 className="text-3xl font-semibold text-white mb-2">
                   Vendify
@@ -90,7 +94,7 @@ export const HomePage = () => {
                 height={500}
                 className="bg-primary w-full rounded-t-lg object-cover"
               />
-              <div className="border border-t border-b border-secondary p-4">
+              <div className="border border-b border-secondary p-4">
                 Typescript, Next.js, Node.js
               </div>
               <div className="p-4">
@@ -111,7 +115,7 @@ export const HomePage = () => {
                 </Link>
               </div>
             </div>
-            <div className="w-full border-2 rounded-lg border-dashed border-secondary">
+            <div className="w-full border-2 rounded-lg border-dashed my-4 md:my-0 border-secondary">
               <Image
                 src={VendifyLogo}
                 alt="vendify"
@@ -119,7 +123,7 @@ export const HomePage = () => {
                 height={500}
                 className="bg-primary w-full rounded-t-lg object-cover"
               />
-              <div className="border border-t border-b border-secondary p-4">
+              <div className="border border-b border-secondary p-4">
                 Typescript, Next.js, Node.js
               </div>
               <div className="p-4">
@@ -143,7 +147,7 @@ export const HomePage = () => {
             </div>
           </div>
         </section>
-        <section className="py-12">
+        <section className="py-12 md:">
           <div className="flex justify-between items-center my-4">
             <div className="flex gap-4 items-center">
               <h3 className="text-3xl font-semibold">Skills</h3>
@@ -151,8 +155,8 @@ export const HomePage = () => {
             </div>
             <Link href={"/skills"}>View All</Link>
           </div>
-          <div className="flex gap-12 justify-between items-center">
-            <div className="w-[40%]">
+          <div className="lg:flex md:block gap-12 justify-between items-center">
+            <div className="lg:w-[40%] my-6 lg:my-0 flex justify-center lg:block">
               <Image
                 src={SkillPattern}
                 alt="vendify"
@@ -161,7 +165,7 @@ export const HomePage = () => {
                 className="bg-primary rounded-t-lg object-cover"
               />
             </div>
-            <div className="flex gap-4 w-[50%]">
+            <div className="flex gap-4 lg:w-[50%]">
               <div className=" divide-y border">
                 <div className="divide-y p-4 font-semibold m-auto">
                   Languages
@@ -224,22 +228,24 @@ export const HomePage = () => {
             </div>
             <Link href={"/about"}>View All</Link>
           </div>
-          <div className="flex justify-between items-center">
-            <div className="text-secondary w-1/2">
-              <p className="my-4 text-xl">Hello, I'm Auspicious!</p>
+          <div className="lg:flex md:block gap-12 justify-between items-center">
+            <div className="text-secondary lg:w-1/2">
+              <p className="my-4 text-xl text-justify">
+                Hello, I'm Auspicious!
+              </p>
               <p>
                 I'm a self-taught software developer based in Ilorin, Nigeria. I
                 can develop responsive websites from scratch and raise them into
                 modern user-friendly web experiences.
               </p>
-              <p className="my-3">
+              <p className="my-3 text-justify">
                 Transforming my creativity and knowledge into a websites has
                 been my passion for over a year. I have been helping various
                 clients to establish their presence online. I always strive to
                 learn about the newest technologies and frameworks.
               </p>
             </div>
-            <div className="w-1/2 flex justify-center">
+            <div className="lg:w-1/2 flex justify-center lg:block">
               <Image
                 src={SkillPattern}
                 alt="vendify"
@@ -257,8 +263,8 @@ export const HomePage = () => {
               <div className="bg-secondary md:w-40 md:h-0.5"></div>
             </div>
           </div>
-          <div className="flex justify-between items-start">
-            <div className="text-secondary w-1/2">
+          <div className="lg:flex justify-between items-start">
+            <div className="text-secondary lg:w-1/2">
               <p className="my-3">
                 I'm available for both freelance and full-time roles. If you
                 need to enquire more, you can hit me up.
