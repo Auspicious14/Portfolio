@@ -165,7 +165,7 @@ export const HomePage = () => {
                 className="bg-primary rounded-t-lg object-cover"
               />
             </div>
-            <div className="flex gap-4 lg:w-[50%]">
+            <div className="md:flex gap-4 lg:w-[50%] grid grid-cols-2">
               <div className=" divide-y border">
                 <div className="divide-y p-4 font-semibold m-auto">
                   Languages
