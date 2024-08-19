@@ -22,7 +22,7 @@ export const HomePage = () => {
         <section className="lg:flex justify-evenly items-center gap-20 py-12">
           <div className="flex flex-col items-center justify-center lg:block">
             <h1 className="text-6xl font-bold text-center lg:text-left">
-              Hi, I'm Auspicious
+              Hi, I&apos;m Auspicious
             </h1>
             <p className="mt-4 text-5xl text-center lg:text-base text-primary">
               A software developer specializing in creating engaging and
@@ -45,7 +45,7 @@ export const HomePage = () => {
         <section className="flex flex-col justify-center items-center">
           <div>
             <div className="italic text-3xl p-4 mt-4">
-              " Grind till you become ELENIYAN."
+              &quot; Grind till you become ELENIYAN.&quot;
             </div>
           </div>
           {/* <div className="border border-secondary p-4 flex justify-end">

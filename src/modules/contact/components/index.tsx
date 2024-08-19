@@ -9,8 +9,8 @@ export const ContactComponent = () => {
       <div className="lg:flex justify-between items-start">
         <div className="text-secondary lg:w-1/2">
           <p className="my-3">
-            I'm available for both freelance and full-time roles. If you need to
-            enquire more, you can hit me up.
+            I&apos;m available for both freelance and full-time roles. If you
+            need to enquire more, you can hit me up.
           </p>
         </div>
         <div className=" flex justify-center ">

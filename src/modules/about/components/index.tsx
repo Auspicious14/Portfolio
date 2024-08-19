@@ -6,11 +6,13 @@ export const AboutComponent = () => {
     <div>
       <div className="lg:flex md:block gap-12 justify-between items-center">
         <div className="text-secondary lg:w-1/2">
-          <p className="my-4 text-xl text-justify">Hello, I'm Auspicious!</p>
+          <p className="my-4 text-xl text-justify">
+            Hello, I&apos;m Auspicious!
+          </p>
           <p>
-            I'm a self-taught software developer based in Ilorin, Nigeria. I can
-            develop responsive websites from scratch and raise them into modern
-            user-friendly web experiences.
+            I&apos;m a self-taught software developer based in Ilorin, Nigeria.
+            I can develop responsive websites from scratch and raise them into
+            modern user-friendly web experiences.
           </p>
           <p className="my-3 text-justify">
             Transforming my creativity and knowledge into a websites has been my
