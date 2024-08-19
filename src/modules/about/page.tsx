@@ -4,9 +4,9 @@ import { AboutComponent } from "./components";
 
 export const AboutPage = () => {
   return (
-    <div className="container min-h-screen">
+    <div className=" min-h-screen">
       <NavBar />
-      <main className=" mx-auto p-8">
+      <main className=" mx-auto p-8 container">
         <AboutComponent />
       </main>
       <footer className="bg-gray-900 text-white p-6 text-center">

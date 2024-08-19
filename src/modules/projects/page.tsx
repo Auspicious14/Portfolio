@@ -4,9 +4,9 @@ import { ProjectComponent } from "./components";
 
 export const ProjectsPage = () => {
   return (
-    <div className="min-h-screen container ">
+    <div className="min-h-screen ">
       <NavBar />
-      <div className="mx-auto p-8">
+      <div className="mx-auto p-8 container">
         <ProjectComponent />
       </div>
       <footer className="bg-gray-900 text-white p-6 text-center">
