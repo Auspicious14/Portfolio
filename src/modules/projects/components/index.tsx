@@ -54,7 +54,7 @@ export const ProjectComponent = () => {
 
             <Link
               href="https://career-guidance.com.ng"
-              className="text-blue-600 hover:underline"
+              className="my-8 text-primary"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -82,7 +82,7 @@ export const ProjectComponent = () => {
 
             <Link
               href="https://cv-craft.netlify.app"
-              className="text-blue-600 hover:underline"
+              className="my-8 text-primary"
               target="_blank"
               rel="noopener noreferrer"
             >
