@@ -64,7 +64,7 @@ export const HomePage = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.1]"
             >
-              Helping Founders Turn Ideas Into <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Working MVPs.</span>
+              Helping Founders Turn Ideas Into <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C778DD] to-blue-400">Working MVPs.</span>
             </motion.h1>
 
             <motion.p 
@@ -218,7 +218,7 @@ export const HomePage = () => {
                   className="relative"
                 >
                   {idx !== WORKFLOW.length - 1 && (
-                    <div className="hidden md:block absolute top-8 left-[100%] w-full h-[2px] bg-gradient-to-r from-primary/30 to-transparent -z-10" />
+                    <div className="hidden md:block absolute top-8 left-[100%] w-full h-[2px] bg-gradient-to-r from-[#C778DD]/30 to-transparent -z-10" />
                   )}
                   <div className="w-16 h-16 rounded-2xl bg-primary/20 border border-primary/30 flex items-center justify-center text-primary font-bold text-2xl mb-8">
                     {idx + 1}
