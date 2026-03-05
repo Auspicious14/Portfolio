@@ -1,36 +1,47 @@
 import React from "react";
 import Image from "next/image";
-import SkillPattern from "./../../../../public/Group 36.png";
+import { ABOUT } from "../../../data/portfolio";
+
 export const AboutComponent = () => {
   return (
-    <div>
+    <div className="py-12">
       <div className="lg:flex md:block gap-12 justify-between items-center">
-        <div className="text-secondary lg:w-1/2">
-          <p className="my-4 text-xl text-justify">
-            Hello, I&apos;m Auspicious!
+        <div className="text-gray-400 lg:w-1/2">
+          <p className="my-4 text-2xl font-bold text-white">
+            Hello, I&apos;m {ABOUT.name}
           </p>
-          <p>
-            I&apos;m a self-taught software developer based in Ilorin, Nigeria.
-            I can develop responsive websites from scratch and raise them into
-            modern user-friendly web experiences.
+          <p className="text-lg leading-relaxed mb-6">
+            {ABOUT.story}
           </p>
-          <p className="my-3 text-justify">
-            Transforming my creativity and knowledge into a websites has been my
-            passion for over a year. I have been helping various clients to
-            establish their presence online. I always strive to learn about the
-            newest technologies and frameworks.
-          </p>
+          <div className="grid grid-cols-2 gap-6 mt-8">
+            <div>
+              <h4 className="text-primary font-bold uppercase text-xs tracking-widest mb-2">Location</h4>
+              <p className="text-white">{ABOUT.location}</p>
+            </div>
+            <div>
+              <h4 className="text-primary font-bold uppercase text-xs tracking-widest mb-2">Experience</h4>
+              <p className="text-white">{ABOUT.experience}</p>
+            </div>
+            <div className="col-span-2">
+              <h4 className="text-primary font-bold uppercase text-xs tracking-widest mb-2">Specialization</h4>
+              <p className="text-white">{ABOUT.specialization}</p>
+            </div>
+          </div>
         </div>
-        <div className="lg:w-1/2 flex justify-center lg:block">
-          <Image
-            src={SkillPattern}
-            alt="vendify"
-            width={400}
-            height={400}
-            className="object-cover"
-          />
+        <div className="lg:w-1/2 flex justify-center lg:block mt-12 lg:mt-0">
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-primary to-blue-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <Image
+              src="/Group 36.png"
+              alt="Auspicious"
+              width={500}
+              height={500}
+              className="relative rounded-2xl object-cover bg-[#0F1115] border border-white/10"
+            />
+          </div>
         </div>
       </div>
     </div>
   );
 };
+
