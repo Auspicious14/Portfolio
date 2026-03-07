@@ -145,7 +145,7 @@ export const HomePage = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {PROJECTS.map((project, idx) => (
+              {PROJECTS.slice(0, 4).map((project, idx) => (
                 <motion.div 
                   key={idx}
                   initial={{ opacity: 0, y: 20 }}
@@ -163,7 +163,9 @@ export const HomePage = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                       <div className="flex gap-4">
-                        <Link href={project.live} target="_blank" className="px-4 py-2 bg-white text-black rounded-lg text-sm font-bold">Live Demo</Link>
+                        {project.live && (
+                          <Link href={project.live} target="_blank" className="px-4 py-2 bg-white/20 backdrop-blur-md rounded-lg text-sm font-bold border border-white/30">Live Demo</Link>
+                        )}
                         <Link href={project.github} target="_blank" className="px-4 py-2 bg-white/20 backdrop-blur-md rounded-lg text-sm font-bold border border-white/30">GitHub</Link>
                       </div>
                     </div>
@@ -321,9 +323,9 @@ export const HomePage = () => {
               I don&apos;t just write code; I build systems that solve real problems.
             </p>
             <div className="flex justify-center gap-6">
-              <Link href="https://github.com" target="_blank" className="text-gray-400 hover:text-white transition-colors"><GithubIcon /></Link>
-              <Link href="https://linkedin.com" target="_blank" className="text-gray-400 hover:text-white transition-colors"><LinkedinIcon /></Link>
-              <Link href="mailto:hello@example.com" className="text-gray-400 hover:text-white transition-colors"><Mail /></Link>
+              <Link href="https://github.com/auspicious14" target="_blank" className="text-gray-400 hover:text-white transition-colors"><GithubIcon /></Link>
+              <Link href="https://linkedin.com/in/uthman-abdulganiyu/" target="_blank" className="text-gray-400 hover:text-white transition-colors"><LinkedinIcon /></Link>
+              <Link href="mailto:uthmanabdulganiyu2019@gmail.com" className="text-gray-400 hover:text-white transition-colors"><Mail /></Link>
             </div>
           </div>
         </section>
@@ -346,7 +348,7 @@ export const HomePage = () => {
                     Start Your Project
                   </Link>
                   <Link 
-                    href="https://linkedin.com" 
+                    href="https://linkedin.com/in/uthman-abdulganiyu" 
                     target="_blank"
                     className="px-10 py-5 bg-black/20 backdrop-blur-md border border-white/20 text-white rounded-2xl font-bold text-lg hover:bg-black/30 transition-colors"
                   >
