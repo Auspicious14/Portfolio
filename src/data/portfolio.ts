@@ -42,7 +42,7 @@ export const PROJECTS: Project[] = [
     problem: "Lack of real-time monitoring for expectant mothers in high-risk environments.",
     built: "Built a cross-platform mobile application with real-time health tracking and automated emergency alert systems.",
     tech: ["React Native", "Expo", "TypeScript", "Node.js", "MongoDB"],
-    live: "#",
+    live: "https://maternalert-web.vercel.app/",
     github: "https://github.com/auspicious14/maternalert-fe.git",
     image: "/maternalert.png",
     category: "Health",
