@@ -33,7 +33,7 @@ export const AboutComponent = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-blue-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
             <Image
               src="/Group 36.png"
-              alt="Auspicious"
+              alt="Uthman Abdulganiyu"
               width={500}
               height={500}
               className="relative rounded-2xl object-cover bg-[#0F1115] border border-white/10"

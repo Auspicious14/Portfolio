@@ -13,6 +13,18 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    name: "MaternAlert",
+    description: "Life-saving maternal health monitoring application built for accessibility and real-time alerts against blood pressure and pre-eclampsia.",
+    problem: "Lack of real-time monitoring for expectant mothers in high-risk environments.",
+    built: "Built the patient-facing and healthworker facility application, including blood-pressure monitoring, reminders, trend detection, escalation workflows and appointment-related functionality. I also developed the backend and AI components as part of the wider product.",
+    tech: ["React Native", "Web", "Expo", "TypeScript", "Node.js", "Prisma"],
+    live: "https://maternalert-web.vercel.app/",
+    github: "https://github.com/auspicious14/maternalert-fe.git",
+    image: "/Matern2.png",
+    category: "Health",
+    keyFeatures: ["Health Tracking", "Automated Alerts", "Offline Mode", "Emergency Integration"]
+  },
+  {
     name: "DevDrill",
     description: "AI-powered coding practice platform designed to help developers master technical interviews through interactive, real-time feedback.",
     problem: "Founders need a way to help their users bridge the gap between theory and practical coding skills.",
@@ -23,6 +35,18 @@ export const PROJECTS: Project[] = [
     image: "/devdrill.png",
     category: "AI",
     keyFeatures: ["AI Code Reviews", "Real-time Execution", "Personalized Paths", "Progress Analytics"]
+  },
+  {
+    name: "VideoAI",
+    description: "An automated video-production system that turns structured content into narrated videos using AI-generated scripts, voice, visual assets and automated video composition.",
+    problem: "Automate video creation processes for content creators and marketers.",
+    built: "Built the pipeline that coordinates script generation, voice generation, visual asset generation and video rendering into a finished video. The system uses multiple AI services and automated media-processing workflows.",
+    tech: ["Python", "FastAPI", "OpenAI API", "FFmpeg", "Kokoro-tts"],
+    live: "#",
+    github: "https://github.com/auspicious14/video-AI.git",
+    image: "/second-order.png",
+    category: "AI",
+    keyFeatures: ["Video Generation", "Research", "Media Acquisition", "Audio Synthesis", "Video Rendering"]
   },
   {
     name: "Foozam",
@@ -36,18 +60,7 @@ export const PROJECTS: Project[] = [
     category: "AI",
     keyFeatures: ["Food Recognition", "Nutritional Analysis", "Real-time Data", "Health Tracking"]
   },
-  {
-    name: "MaternAlert",
-    description: "Life-saving maternal health monitoring application built for accessibility and real-time alerts against blood pressure and pre-eclampsia.",
-    problem: "Lack of real-time monitoring for expectant mothers in high-risk environments.",
-    built: "Built a cross-platform mobile application with real-time health tracking and automated emergency alert systems.",
-    tech: ["React Native", "Expo", "TypeScript", "Node.js", "MongoDB"],
-    live: "https://maternalert-web.vercel.app/",
-    github: "https://github.com/auspicious14/maternalert-fe.git",
-    image: "/maternalert.png",
-    category: "Health",
-    keyFeatures: ["Health Tracking", "Automated Alerts", "Offline Mode", "Emergency Integration"]
-  },
+  
   {
     name: "Event9ja",
     description: "A comprehensive event management and ticketing platform designed for seamless event organization and attendee management in Nigeria.",
@@ -83,6 +96,18 @@ export const PROJECTS: Project[] = [
     image: "/inkly-ai.png",
     category: "AI",
     keyFeatures: ["Text-to-Image", "Image-to-Image", "Style Tuning", "Batch Generation"]
+  },
+  {
+    name: "Vendify",
+    description: "Scalable multi-vendor ecommerce platform with integrated payments and real-time communication.",
+    problem: "Founders need a robust, marketplace-ready system that handles complex vendor-customer interactions seamlessly.",
+    built: "Architected a high-performance marketplace with secure payment gateways, real-time chat via WebSockets, and a comprehensive vendor dashboard.",
+    tech: ["Next.js", "Node.js", "Express", "MongoDB", "Socket.io", "TailwindCSS"],
+    live: "https://vendiify.vercel.app",
+    github: "https://github.com/Auspicious14/healthshoponline-fe.git",
+    image: "/vendify logo white.jpg",
+    category: "Marketplace",
+    keyFeatures: ["Multi-vendor Dashboards", "Real-time Chat", "Secure Payments", "Inventory Management"]
   },
   {
     name: "Tolatu",
@@ -132,18 +157,7 @@ export const PROJECTS: Project[] = [
     category: "SaaS",
     keyFeatures: ["Cognitive Reframing", "Progress Tracking", "Reflective Journaling", "AI Coaching"]
   },
-  {
-    name: "Vendify",
-    description: "Scalable multi-vendor ecommerce platform with integrated payments and real-time communication.",
-    problem: "Founders need a robust, marketplace-ready system that handles complex vendor-customer interactions seamlessly.",
-    built: "Architected a high-performance marketplace with secure payment gateways, real-time chat via WebSockets, and a comprehensive vendor dashboard.",
-    tech: ["Next.js", "Node.js", "Express", "MongoDB", "Socket.io", "TailwindCSS"],
-    live: "https://vendiify.vercel.app",
-    github: "https://github.com",
-    image: "/vendify logo white.jpg",
-    category: "Marketplace",
-    keyFeatures: ["Multi-vendor Dashboards", "Real-time Chat", "Secure Payments", "Inventory Management"]
-  },
+  
   {
     name: "HallMate",
     description: "A comprehensive lecture hall booking application designed for universities to manage classroom reservations and optimize space utilization.",
@@ -160,8 +174,10 @@ export const PROJECTS: Project[] = [
 
 export const TECH_STACK = {
   frontend: ["React", "Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
-  backend: ["Node.js", "Express", "GraphQL", "Socket.io", "OpenAI"],
-  infrastructure: ["MongoDB", "Vercel", "AWS", "GitHub Actions"]
+  mobile: ["React Native", "Expo"],
+  backendAndApi: ["Node.js", "NestJS", "GraphQL", "REST", "Socket.io", "Apollo Client", "OpenAI"],
+  aiAndautomation: ["AI APIs", "LLM integrations", "automated media pipelines", "Python/FastAPI"],
+  databaseAndTools: ["MongoDB", "Prisma", "Git", "GitHub"]
 };
 
 export const WORKFLOW = [
@@ -196,9 +212,9 @@ export const TIMELINE = [
 ];
 
 export const ABOUT = {
-  name: "Uthman Abdulganiyu (Auspicious)",
-  story: "I'm a Full-Stack Engineer who thrives at the intersection of startup ideas and technical execution. My goal is to eliminate the technical friction that founders face, building robust MVPs that allow you to focus on growth and product-market fit. I don't just write code; I build systems that solve real problems.",
-  location: "Ilorin, Nigeria",
-  experience: "3+ years of building real-world applications",
-  specialization: "Startup MVPs, AI-powered systems, Scalable Backends"
+  name: "Uthman Abdulganiyu",
+  story: "I've spent the last 4+ years building web and mobile applications, working mainly with React, Next.js, TypeScript and React Native. My professional experience has involved turning client requirements into working features, integrating APIs, maintaining existing applications and working across different products and codebases. Outside of professional work, I build my own products to explore ideas that interest me. Some of those include MaternAlert, a maternal-health platform, and VideoAI, an automated AI-powered video production system. I enjoy understanding how a product is supposed to work, figuring out the technical pieces behind it and turning that into something people can actually use.",
+  location: "Lagos, Nigeria",
+  experience: "4+ years of building web and mobile applications",
+  specialization: "Web & Mobile Development, API Integration, Product Building"
 };
